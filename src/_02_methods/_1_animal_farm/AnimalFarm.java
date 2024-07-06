@@ -27,9 +27,30 @@ public class AnimalFarm {
 
 		/* 1. Ask the user which animal they want, then see and hear 
 		 *    the animal they chose using one of the methods below.
+		 * 
 		*/			 
-			
+			String Animal = JOptionPane.showInputDialog(null,"Which Animal Do you want to eat? Cat, Cow, Dog, Duck or Llama?");
 		/* 2. Make it so that the user can keep entering new animals. */
+		if (Animal.equals("Dog")) {
+			woof();
+
+			
+		} else if (Animal.equals("Cat")) {
+			meow();
+			
+		}  else if (Animal.equals("Duck")) {
+			quack();
+			
+		}  else if (Animal.equals("Llama"))
+		{
+			llamaScream();
+		}else if (Animal.equals("Cow"))
+		{
+			moo();
+		}
+
+
+
 
 	}
 
@@ -91,6 +112,7 @@ public class AnimalFarm {
 					Thread.sleep(clip.getMicrosecondLength()/1000);
 				}
 				catch (Exception e) {
+					e.printStackTrace();
 					System.out.println("Could not play this sound");
 				}}).start();
 	 		}
