@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Lottery",
+            "request": "launch",
+            "mainClass": "_01_random._6_lottery_numbers.Lottery",
+            "projectName": "Level0-Module2_26c0ea07"
+        },
+        {
+            "type": "java",
             "name": "AnimalFarm",
             "request": "launch",
             "mainClass": "_02_methods._1_animal_farm.AnimalFarm"
