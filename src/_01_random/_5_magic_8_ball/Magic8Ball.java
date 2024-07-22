@@ -14,9 +14,10 @@ public class Magic8Ball {
 	// 1. Make a main method that includes all the steps below
 	public static void main(String[] args) {
 		new DiceRoll().run();
-	}
+	
 
 	// 2. Get the user to enter a question for the 8 ball to answer
+	JOptionPane.showInputDialog("Enter a Yes/No question here for me to answer");
 	
 
 	// 3. Make a variable and initialize it to a random number.
@@ -28,24 +29,28 @@ public class Magic8Ball {
 
 	
 	// 4. If the random number is 0
-System.out.println(randomNumber);
 		if (randomNumber==4) {
-			JOptionPane.showMessageDialog(null,"You're Pretty....Ugly");
+			JOptionPane.showMessageDialog(null,"Yes");
 			
-		} else if (randomNumber==3) {
-				JOptionPane.showMessageDialog(null,"Nice Job....At Failing");
+			} 
+			else if (randomNumber==3) {
+				JOptionPane.showMessageDialog(null,"No");
 			
 
 				
 			}
 			else if (randomNumber==2) {
-				JOptionPane.showMessageDialog(null,"Roses are Red, Violets are Blue, God Made Me Handsome, Guess He Forgot About You!");
+				JOptionPane.showMessageDialog(null,"Maybe... No");
 			}
 			else if (randomNumber==1) {
-				JOptionPane.showMessageDialog(null,"You're Short");
+				JOptionPane.showMessageDialog(null,"Possibly");
+            }
+			else if (randomNumber==0) {
+				JOptionPane.showMessageDialog(null,"Definetely");
 
 
 			}
+			System.out.println(randomNumber);
 			
 		}
 	// -- tell the user "Yes"

@@ -3,16 +3,25 @@ package _03_string_conversion._2_strings_cannot_add;
 import javax.swing.JOptionPane;
 
 public class StringsCannotAdd {
+	public static void main(String[] args) {
 
 		// 1) Make a main method that includes all the steps below…. 
+
 		
 			// 2) Ask the user to enter number 4 and hold it in the variable fourAsString 
-			
+			String fourAsString= JOptionPane.showInputDialog("Enter the number four");
+			String fiveAsString= JOptionPane.showInputDialog("Enter the number five");
 			// 3) Ask the user to enter number 6 and hold it in the variable sixAsString 
+			String sixAsString= JOptionPane.showInputDialog("Enter the number six");
+
+			4
 			
 			// 4) Print the addition of fourAsString and sixAsString using JOptionPane 
+			JOptionPane.showMessageDialog(null, fourAsString+fiveAsString+sixAsString);
+
 			
 			// Did you notice 46 instead of 4 + 6 = 10?
+			
 			
 			// 5) Ask the user to enter number 5 and hold it in the variable fiveAsString 
 			
@@ -34,4 +43,5 @@ public class StringsCannotAdd {
 			// 10) Print the addition of fourAsInt, sixAsInt, and fiveAsInt using JOptionPane 
 			
 			// Is your value now 15 instead of 465?
+	}
 }

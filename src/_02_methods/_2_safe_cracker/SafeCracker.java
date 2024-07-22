@@ -25,7 +25,7 @@ public class SafeCracker {
 	}
 int i = 0;
 	void crackTheSafe() {
-		for(int i=9999900;i<10000000; i+=1){
+		for(int i=0;i<10000000; i+=1){
 			tryCode(i);
 
 		}

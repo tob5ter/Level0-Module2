@@ -10,8 +10,8 @@ public class Lottery {
 public static void main(String[] args) {
     String message = "";
     Random ran=new Random();
-    for(int i=0;i<6; i+=1){
-    int randomChoice=1+ran.nextInt(99);
+    for(int i=0;i<3; i+=1){
+    int randomChoice=1+ran.nextInt(3);
     message+=randomChoice+" ";
     }
     JOptionPane.showMessageDialog(null,message);
